@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Navbar from "./Navbar"
+import ProfileCard from "./Profile"
 
 
 function Hero() {
@@ -9,8 +10,9 @@ function Hero() {
         <div className="bg-warning text-warning-foreground" />
         <Navbar />
         
-      <div className="flex min-h-svh flex-col items-center justify-center">
-      <Button>Click me</Button>
+      <div className="flex min-h-svh  items-center justify-center">
+        <ProfileCard/>
+        <Button>Click me</Button>
     </div>
     </div>
 
