@@ -16,7 +16,7 @@ function Navbar() {
         <div className="flex items-center gap-4">
           <div className="font-hanken-grotesk text-sm font-semibold tracking-tight">Kumar Nirupam</div>
           {/* Vertical divider */}
-          <div className="h-7 w-[1px] bg-border/20" />
+          <div className="h-7 w-px bg-border/20" />
         </div>
 
         {/* Right: nav links + theme toggle */}

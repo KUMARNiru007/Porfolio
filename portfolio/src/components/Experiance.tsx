@@ -63,7 +63,7 @@ function ExperienceCard({ experience }: { experience: ExperienceItem }) {
       </div>
 
       {/* Description */}
-      <div className="mb-2 flex-grow">
+      <div className="mb-2 grow">
         <div
           className={`text-sm text-muted-foreground transition-all duration-300 overflow-hidden ${
             isExpanded ? 'max-h-full' : 'line-clamp-3'
