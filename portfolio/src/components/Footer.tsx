@@ -1,6 +1,9 @@
 import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
 
 function Footer() {
+
+  const year = new Date().getFullYear()
+
   const socialLinks = [
     {
       name: 'GitHub',
@@ -29,12 +32,12 @@ function Footer() {
   ];
 
   return (
-    <footer className="w-full bg-background border-t border-border py-12 px-4 md:px-6">
+    <footer className="w-full bg-background border-t border-border py-10 px-4 md:px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-3">
           {/* Left: Copyright */}
           <div className="text-sm text-muted-foreground">
-            <p>© 2025 <span className="font-semibold text-foreground">Kumar Nirupam</span>. All rights reserved.</p>
+            <p>© {year} <span className="font-semibold text-foreground">Kumar Nirupam</span>. All rights reserved.</p>
           </div>
 
           {/* Right: Social Icons */}
@@ -57,15 +60,6 @@ function Footer() {
           </div>
         </div>
 
-        {/* Back to Top Button */}
-        <div className="mt-8 flex justify-center">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-muted-foreground hover:text-primary transition-colors duration-200 text-sm"
-          >
-            ↑ Back to top
-          </button>
-        </div>
       </div>
     </footer>
   );

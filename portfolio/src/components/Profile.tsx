@@ -19,7 +19,7 @@ const ProfileCard = () => {
     }
   };
 
-  // Add this function to hide the annotation
+
   const handleMouseLeave = () => {
     if (annotationRef.current) {
       annotationRef.current.hide();
